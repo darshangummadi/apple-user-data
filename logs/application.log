@@ -1609,3 +1609,897 @@ java.lang.ClassCastException: class java.lang.String cannot be cast to class jav
 2025-03-16T20:11:59.562-04:00  INFO 83253 --- [webhook-automation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-16T20:11:59.565-04:00  INFO 83253 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-16T20:11:59.568-04:00  INFO 83253 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-16T22:11:52.758-04:00  INFO 12903 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : Starting WebhookAutomationApplicationTests using Java 17.0.5 with PID 12903 (started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T22:11:52.760-04:00 DEBUG 12903 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T22:11:52.762-04:00  INFO 12903 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T22:11:52.779-04:00 DEBUG 12903 --- [webhook-automation] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@267517e4
+2025-03-16T22:11:53.098-04:00  INFO 12903 --- [webhook-automation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T22:11:53.108-04:00  INFO 12903 --- [webhook-automation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-03-16T22:11:53.242-04:00  WARN 12903 --- [webhook-automation] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T22:11:53.269-04:00  INFO 12903 --- [webhook-automation] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T22:11:53.327-04:00  INFO 12903 --- [webhook-automation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-16T22:11:53.418-04:00  INFO 12903 --- [webhook-automation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:38ddcd25-c1cd-4bf7-9e07-a02402a166c0 user=SA
+2025-03-16T22:11:53.419-04:00  INFO 12903 --- [webhook-automation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-16T22:11:53.448-04:00  INFO 12903 --- [webhook-automation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T22:11:53.482-04:00  INFO 12903 --- [webhook-automation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-16T22:11:53.499-04:00  INFO 12903 --- [webhook-automation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T22:11:53.637-04:00  INFO 12903 --- [webhook-automation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T22:11:53.684-04:00  INFO 12903 --- [webhook-automation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T22:11:53.860-04:00  INFO 12903 --- [webhook-automation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T22:11:53.863-04:00  INFO 12903 --- [webhook-automation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T22:11:53.963-04:00  WARN 12903 --- [webhook-automation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T22:11:54.012-04:00 DEBUG 12903 --- [webhook-automation] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T22:11:54.049-04:00 DEBUG 12903 --- [webhook-automation] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T22:11:54.066-04:00 DEBUG 12903 --- [webhook-automation] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T22:11:54.089-04:00 DEBUG 12903 --- [webhook-automation] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T22:11:54.167-04:00  INFO 12903 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : Started WebhookAutomationApplicationTests in 1.581 seconds (process running for 2.091)
+2025-03-16T22:11:54.667-04:00 DEBUG 12903 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@267517e4, started on Sun Mar 16 22:11:52 EDT 2025
+2025-03-16T22:11:54.670-04:00  INFO 12903 --- [webhook-automation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T22:11:54.672-04:00  INFO 12903 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-16T22:11:54.674-04:00  INFO 12903 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-16T22:14:25.843-04:00  INFO 13626 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 13626 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T22:14:25.845-04:00 DEBUG 13626 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T22:14:25.845-04:00  INFO 13626 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T22:14:25.865-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-3.0.6.jar referenced one or more files that do not exist: file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-utils.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/jakarta.annotation-api.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/jakarta.inject-api.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-api.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/aopalliance-repackaged.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-core.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-locator.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/javassist.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-runlevel.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/class-model.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-analysis.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-commons.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-tree.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-util.jar
+2025-03-16T22:14:25.865-04:00  INFO 13626 --- [webhook-automation] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-16T22:14:25.866-04:00  INFO 13626 --- [webhook-automation] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-16T22:14:26.132-04:00  INFO 13626 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T22:14:26.140-04:00  INFO 13626 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-03-16T22:14:26.258-04:00  WARN 13626 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T22:14:26.279-04:00  INFO 13626 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T22:14:26.416-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T22:14:26.423-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T22:14:26.424-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T22:14:26.441-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T22:14:26.441-04:00  INFO 13626 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 575 ms
+2025-03-16T22:14:26.494-04:00  INFO 13626 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-16T22:14:26.576-04:00  INFO 13626 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9e9f0b69-d81e-46a0-b447-b78cab0b5d71 user=SA
+2025-03-16T22:14:26.577-04:00  INFO 13626 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-16T22:14:26.600-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T22:14:26.622-04:00  INFO 13626 --- [webhook-automation] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-16T22:14:26.634-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T22:14:26.732-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T22:14:26.762-04:00  INFO 13626 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T22:14:26.893-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T22:14:26.895-04:00  INFO 13626 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T22:14:26.945-04:00  WARN 13626 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T22:14:26.984-04:00 DEBUG 13626 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T22:14:27.004-04:00 DEBUG 13626 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T22:14:27.018-04:00 DEBUG 13626 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T22:14:27.039-04:00 DEBUG 13626 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T22:14:27.063-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9e9f0b69-d81e-46a0-b447-b78cab0b5d71'
+2025-03-16T22:14:27.107-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T22:14:27.124-04:00  INFO 13626 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T22:14:27.129-04:00  INFO 13626 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 1.46 seconds (process running for 1.63)
+2025-03-16T22:14:57.469-04:00  INFO 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16T22:14:57.470-04:00  INFO 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-16T22:14:57.471-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-16T22:14:57.471-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-16T22:14:57.471-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-16T22:14:57.473-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7e10ccd0
+2025-03-16T22:14:57.474-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@59c63e6a
+2025-03-16T22:14:57.474-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-16T22:14:57.474-04:00  INFO 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-16T22:14:57.479-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/", parameters={}
+2025-03-16T22:14:57.484-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-03-16T22:14:57.510-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-03-16T22:14:57.514-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2025-03-16T22:14:57.515-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-03-16T22:14:57.519-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2025-03-16T22:14:57.520-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-03-16T22:14:57.542-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-16T22:14:57.543-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 16 22:14:57 EDT 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-03-16T22:14:57.561-04:00 DEBUG 13626 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2025-03-16T22:17:11.702-04:00  INFO 13626 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T22:17:11.712-04:00  INFO 13626 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T22:17:11.720-04:00  INFO 13626 --- [webhook-automation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T22:17:11.737-04:00  WARN 13626 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T22:17:11.738-04:00  INFO 13626 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-16T22:17:11.739-04:00  INFO 13626 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-16T22:17:15.428-04:00  INFO 14435 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 14435 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T22:17:15.429-04:00 DEBUG 14435 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T22:17:15.429-04:00  INFO 14435 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T22:17:15.449-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-3.0.6.jar referenced one or more files that do not exist: file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-utils.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/jakarta.annotation-api.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/jakarta.inject-api.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-api.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/aopalliance-repackaged.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-core.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-locator.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/javassist.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/hk2-runlevel.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/class-model.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-analysis.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-commons.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-tree.jar,file:/Users/darshan/.m2/repository/org/glassfish/hk2/hk2/3.0.6/asm-util.jar
+2025-03-16T22:17:15.450-04:00  INFO 14435 --- [webhook-automation] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-16T22:17:15.450-04:00  INFO 14435 --- [webhook-automation] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-16T22:17:15.709-04:00  INFO 14435 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T22:17:15.717-04:00  INFO 14435 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-03-16T22:17:15.834-04:00  WARN 14435 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T22:17:15.851-04:00  INFO 14435 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T22:17:15.988-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T22:17:15.994-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T22:17:15.994-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T22:17:16.014-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T22:17:16.014-04:00  INFO 14435 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 564 ms
+2025-03-16T22:17:16.066-04:00  INFO 14435 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-16T22:17:16.147-04:00  INFO 14435 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1bc95ae0-ac3d-450d-bff7-c961c5cab39a user=SA
+2025-03-16T22:17:16.148-04:00  INFO 14435 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-16T22:17:16.170-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T22:17:16.192-04:00  INFO 14435 --- [webhook-automation] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-16T22:17:16.205-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T22:17:16.309-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T22:17:16.341-04:00  INFO 14435 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T22:17:16.474-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T22:17:16.476-04:00  INFO 14435 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T22:17:16.526-04:00  WARN 14435 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T22:17:16.566-04:00 DEBUG 14435 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T22:17:16.585-04:00 DEBUG 14435 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T22:17:16.599-04:00 DEBUG 14435 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T22:17:16.620-04:00 DEBUG 14435 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T22:17:16.643-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1bc95ae0-ac3d-450d-bff7-c961c5cab39a'
+2025-03-16T22:17:16.683-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T22:17:16.698-04:00  INFO 14435 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T22:17:16.704-04:00  INFO 14435 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 1.443 seconds (process running for 1.614)
+2025-03-16T22:22:47.075-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16T22:22:47.076-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-16T22:22:47.076-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-16T22:22:47.076-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-16T22:22:47.076-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-16T22:22:47.080-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6da2e709
+2025-03-16T22:22:47.081-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4831dcd
+2025-03-16T22:22:47.081-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-16T22:22:47.081-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-03-16T22:22:47.090-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:47.107-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:47.237-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:47.241-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:47.242-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:47.242-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:47.242-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:47.242-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:47.250-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:47.251-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:47.258-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:22:48.152-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:48.152-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:48.153-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:48.153-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:48.153-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:48.153-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:48.153-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:48.153-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:48.154-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:48.154-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:48.155-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:22:50.506-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:50.507-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:50.508-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:50.508-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:50.509-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:50.509-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:50.509-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:50.509-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:50.510-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:50.510-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:50.511-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:22:51.428-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:51.429-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:51.430-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:51.431-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:51.431-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:51.431-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:51.431-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:51.431-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:51.431-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:51.432-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:51.432-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:22:52.358-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:52.359-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:52.360-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:52.360-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:52.360-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:52.360-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:52.360-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:52.360-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:52.361-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:52.361-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:52.361-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:22:53.378-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:53.380-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:53.381-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:53.382-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:53.382-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:53.382-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:53.382-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:53.382-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:53.382-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:53.382-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:53.383-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:22:54.295-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:54.295-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:54.296-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:54.296-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:54.296-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:54.296-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:54.296-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:54.296-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:54.297-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:54.297-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:54.297-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:22:59.878-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:22:59.878-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:22:59.879-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:22:59.880-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:22:59.880-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:22:59.880-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:22:59.880-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:22:59.880-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:22:59.880-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:22:59.881-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:22:59.882-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:00.766-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:00.769-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:00.770-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:00.770-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:00.770-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:00.770-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:00.770-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:00.770-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:00.771-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:00.771-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:00.772-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:01.670-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:01.671-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:01.673-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:01.673-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:01.673-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:01.673-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:01.673-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:01.673-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:01.673-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:01.673-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:01.674-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:02.542-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:02.543-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:02.545-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:02.546-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:02.546-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:02.546-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:02.546-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:02.546-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:02.546-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:02.546-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:02.547-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:17.234-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:17.236-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:17.239-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:17.240-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:17.240-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:17.240-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:17.240-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:17.240-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:17.241-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:17.241-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:17.243-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:18.202-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:18.203-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:18.207-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:18.207-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:18.207-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:18.207-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:18.208-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:18.208-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:18.208-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:18.208-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:18.209-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:19.076-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:19.077-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:19.078-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:19.078-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:19.078-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:19.078-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:19.078-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:19.079-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:19.079-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:19.079-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:19.080-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:19.916-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:19.917-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:19.918-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:19.918-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:19.919-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:19.919-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:19.919-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:19.919-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:19.919-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:19.919-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:19.920-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:20.726-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:20.726-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:20.729-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:20.729-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:20.729-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:20.730-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:20.730-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:20.730-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:20.730-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:20.730-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:20.731-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:21.582-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:21.583-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:21.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:21.585-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:21.585-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:21.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:21.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:21.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:21.586-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:21.586-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:21.587-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:22.481-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:22.482-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:22.486-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:22.486-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:22.486-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:22.486-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:22.486-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:22.486-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:22.487-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:22.487-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:22.488-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:23.313-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:23.313-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:23.314-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:23.314-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:23.314-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:23.314-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:23.314-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:23.314-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:23.314-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:23.314-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:23.314-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:24.194-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:24.195-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:24.195-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:24.195-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:24.195-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:24.195-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:24.195-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:24.195-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:24.195-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:24.196-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:24.196-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:25.083-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:25.084-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:25.084-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:25.084-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:25.084-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:25.084-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:25.085-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:25.085-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:25.085-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:25.085-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:25.085-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:25.917-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:25.917-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:25.918-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:25.918-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:25.918-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:25.918-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:25.918-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:25.918-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:25.918-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:25.918-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:25.919-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:26.858-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:26.858-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:26.859-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:26.859-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:26.859-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:26.859-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:26.859-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:26.859-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:26.859-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:26.859-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:26.859-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:27.708-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:27.709-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:27.711-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:27.711-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:27.711-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:27.711-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:27.711-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:27.711-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:27.712-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:27.712-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:27.713-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:57.636-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:57.638-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:57.641-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:57.641-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:57.641-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:57.642-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:57.642-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:57.642-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:57.643-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:57.643-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:57.644-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:58.515-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:58.516-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:58.519-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:58.519-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:58.519-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:58.519-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:58.519-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:58.519-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:58.520-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:58.520-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:58.520-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:23:59.422-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:23:59.422-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:23:59.423-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:23:59.423-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:23:59.423-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:23:59.423-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:23:59.423-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:23:59.423-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:23:59.423-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:23:59.423-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:23:59.424-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:00.268-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:00.269-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:00.269-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:00.269-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:00.270-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:00.270-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:00.270-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:00.270-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:00.270-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:00.270-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:00.270-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:01.186-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:01.187-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:01.188-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:01.188-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:01.188-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:01.188-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:01.188-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:01.188-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:01.188-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:01.188-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:01.189-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:02.032-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:02.033-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:02.035-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:02.036-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:02.036-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:02.036-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:02.036-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:02.036-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:02.037-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:02.037-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:02.038-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:02.865-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:02.866-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:02.870-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:02.870-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:02.870-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:02.870-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:02.870-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:02.870-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:02.870-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:02.870-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:02.871-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:03.697-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:03.698-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:03.698-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:03.698-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:03.698-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:03.698-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:03.698-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:03.698-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:03.699-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:03.699-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:03.699-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:04.563-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:04.564-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:04.568-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:04.568-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:04.568-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:04.568-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:04.568-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:04.568-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:04.569-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:04.569-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:04.569-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:05.467-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:05.468-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:05.469-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:05.469-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:05.470-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:05.470-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:05.470-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:05.470-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:05.470-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:05.470-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:05.471-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:06.388-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:06.389-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:06.392-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:06.392-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:06.392-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:06.392-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:06.392-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:06.392-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:06.393-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:06.393-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:06.394-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:07.241-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:07.243-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:07.244-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:07.245-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:07.245-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:07.245-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:07.245-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:07.245-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:07.245-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:07.245-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:07.246-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:08.137-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:08.137-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:08.139-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:08.139-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:08.139-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:08.139-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:08.139-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:08.140-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:08.140-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:08.140-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:08.141-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:09.154-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:09.155-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:09.156-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:09.156-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:09.156-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:09.156-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:09.156-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:09.156-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:09.157-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:09.157-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:09.157-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:10.115-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:10.117-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:10.118-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:10.118-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:10.118-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:10.118-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:10.118-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:10.118-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:10.119-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:10.119-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:10.119-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:11.101-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:11.102-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:11.104-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:11.104-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:11.104-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:11.105-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:11.105-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:11.105-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:11.105-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:11.105-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:11.106-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:11.975-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:11.975-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:11.976-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:11.976-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:11.976-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:11.976-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:11.976-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:11.976-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:11.976-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:11.976-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:11.976-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:12.816-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:12.817-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:12.818-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:12.818-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:12.818-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:12.818-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:12.818-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:12.818-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:12.819-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:12.819-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:12.820-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:13.659-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:13.660-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:13.661-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:13.661-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:13.662-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:13.662-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:13.662-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:13.662-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:13.662-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:13.662-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:13.662-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:14.583-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:14.583-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:14.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:14.585-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:14.585-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:14.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:14.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:14.585-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:14.586-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:14.586-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:14.587-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:15.503-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:15.504-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:15.505-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:15.506-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:15.506-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:15.506-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:15.506-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:15.506-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:15.506-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:15.506-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:15.507-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:16.525-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:16.527-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:16.529-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:16.529-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:16.529-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:16.529-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:16.529-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:16.529-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:16.529-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:16.529-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:16.530-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:17.548-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:17.549-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:17.551-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:17.551-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:17.551-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:17.551-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:17.551-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:17.551-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:17.552-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:17.552-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:17.552-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:24:18.571-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:24:18.572-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:24:18.574-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}]
+2025-03-16T22:24:18.574-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan, Steps=13602}
+2025-03-16T22:24:18.574-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T22:24:18.574-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:24:18.574-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:24:18.575-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:24:18.575-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:24:18.575-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:24:18.576-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:25:23.205-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:25:23.209-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:25:23.231-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:25:23.233-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:25:23.234-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:25:23.234-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:25:23.234-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:25:23.234-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:25:23.237-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:25:23.237-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:25:23.242-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:25:24.120-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:25:24.121-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:25:24.122-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:25:24.123-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:25:24.123-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:25:24.123-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:25:24.123-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:25:24.123-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:25:24.123-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:25:24.123-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:25:24.124-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:25:25.029-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:25:25.029-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:25:25.030-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:25:25.030-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:25:25.031-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:25:25.031-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:25:25.031-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:25:25.031-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:25:25.031-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:25:25.031-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:25:25.032-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:26:29.239-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:26:29.242-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:26:29.246-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:26:29.246-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:26:29.246-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:26:29.246-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:26:29.246-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:26:29.246-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:26:29.247-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:26:29.247-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:26:29.248-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:26:40.195-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:26:40.197-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:26:40.200-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:26:40.200-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:26:40.201-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:26:40.201-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:26:40.201-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:26:40.201-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:26:40.201-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:26:40.201-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:26:40.202-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:26:51.180-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:26:51.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:26:51.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:26:51.181-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=461.2879999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:26:51.181-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:26:51.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:26:51.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 461
+2025-03-16T22:26:51.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:26:51.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:26:51.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:26:51.182-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:37:29.598-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:37:29.602-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:37:29.609-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=463.2459999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:37:29.609-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=463.2459999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:37:29.610-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:37:29.610-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:37:29.610-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 463
+2025-03-16T22:37:29.610-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:37:29.611-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:37:29.611-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:37:29.614-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:39:57.373-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:39:57.378-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:39:57.389-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=463.2459999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:39:57.391-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=463.2459999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:39:57.391-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:39:57.391-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:39:57.392-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 463
+2025-03-16T22:39:57.392-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:39:57.393-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:39:57.393-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:39:57.395-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:40:08.431-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:40:08.433-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:40:08.440-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=463.2459999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:40:08.441-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=463.2459999999991, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:40:08.442-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:40:08.442-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:40:08.442-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 463
+2025-03-16T22:40:08.442-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:40:08.442-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:40:08.443-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:40:08.445-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:40:19.444-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:40:19.450-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:40:19.455-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:40:19.458-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:40:19.458-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:40:19.459-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:40:19.459-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:40:19.459-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:40:19.459-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:40:19.459-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:40:19.459-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:41:01.165-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:41:01.168-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:41:01.176-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:41:01.177-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:41:01.178-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:41:01.178-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:41:01.178-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:41:01.178-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:41:01.179-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:41:01.179-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:41:01.181-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:41:12.143-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:41:12.147-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:41:12.161-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:41:12.162-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:41:12.162-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:41:12.162-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:41:12.162-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:41:12.162-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:41:12.164-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:41:12.164-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:41:12.167-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:41:23.104-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:41:23.107-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:41:23.109-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:41:23.109-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:41:23.109-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:41:23.109-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:41:23.109-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:41:23.110-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:41:23.110-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:41:23.110-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:41:23.111-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:44:03.975-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:44:03.981-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:44:03.985-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:44:03.985-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:44:03.985-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:44:03.985-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:44:03.985-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:44:03.985-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:44:03.986-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:44:03.987-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:44:03.988-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:44:14.961-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:44:14.962-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:44:14.963-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:44:14.963-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:44:14.964-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:44:14.964-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:44:14.964-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:44:14.964-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:44:14.965-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:44:14.965-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:44:14.965-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:44:26.176-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:44:26.179-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:44:26.192-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:44:26.192-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:44:26.193-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:44:26.193-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:44:26.193-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:44:26.193-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:44:26.194-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:44:26.194-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:44:26.196-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:54:12.724-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:54:12.732-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:54:12.737-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:54:12.737-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:54:12.737-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:54:12.737-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:54:12.737-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:54:12.738-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:54:12.739-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:54:12.740-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:54:12.742-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:55:00.037-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:55:00.039-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:55:00.040-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:55:00.040-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:55:00.041-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:55:00.041-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:55:00.041-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:55:00.041-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:55:00.041-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:55:00.042-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:55:00.042-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T22:55:12.524-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T22:55:12.527-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T22:55:12.536-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}]
+2025-03-16T22:55:12.537-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=465.2249999999992, Exercise Minutes=37, Name=Darshan test, Steps=13602}
+2025-03-16T22:55:12.537-04:00  INFO 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 👤 User: Darshan test
+2025-03-16T22:55:12.537-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 13602
+2025-03-16T22:55:12.537-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 465
+2025-03-16T22:55:12.537-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 37
+2025-03-16T22:55:12.538-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T22:55:12.539-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T22:55:12.540-04:00 DEBUG 14435 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T23:08:11.665-04:00  INFO 14435 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T23:08:11.694-04:00  INFO 14435 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T23:08:11.707-04:00  INFO 14435 --- [webhook-automation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T23:08:11.738-04:00  WARN 14435 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T23:08:11.739-04:00  INFO 14435 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-16T23:08:11.742-04:00  INFO 14435 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

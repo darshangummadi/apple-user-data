@@ -19,16 +19,11 @@ public class WebhookController {
         logger.info("🔹 Received Webhook Data: {}", payload);
 
         try {
-            // Extract name (String)
             String name = extractStringValue(payload.get("Name"));
-
-            // Safe extraction of other values
             int steps = extractIntValue(payload.get("Steps"));
             int activeEnergy = extractIntValue(payload.get("Active Energy"));
-            int exerciseMinutes = extractExerciseMinutes(payload.get("Exercise Minutes")); // Special handling for
-                                                                                           // minutes
+            int exerciseMinutes = extractExerciseMinutes(payload.get("Exercise Minutes"));
 
-            // Log extracted values
             logger.info("👤 User: {}", name);
             logger.debug("📌 Steps: {}", steps);
             logger.debug("🔥 Active Energy: {}", activeEnergy);
@@ -41,17 +36,15 @@ public class WebhookController {
         }
     }
 
-    // Extract String value
     private String extractStringValue(Object value) {
         if (value instanceof String) {
             return (String) value;
         } else {
             logger.warn("Unexpected data type for Name field: {}", value);
-            return "Unknown"; // Default name if missing
+            return "Unknown";
         }
     }
 
-    // Handles Steps and Active Energy
     private int extractIntValue(Object value) {
         if (value instanceof Number) {
             return ((Number) value).intValue();
@@ -68,13 +61,12 @@ public class WebhookController {
         }
     }
 
-    // Handles Exercise Minutes (splitting and summing)
     private int extractExerciseMinutes(Object value) {
         if (value instanceof Number) {
             return ((Number) value).intValue();
         } else if (value instanceof String) {
             try {
-                String[] parts = ((String) value).split("\\s+"); // Split by whitespace/newlines
+                String[] parts = ((String) value).split("\\s+");
                 int sum = 0;
                 for (String part : parts) {
                     sum += Integer.parseInt(part.trim());
