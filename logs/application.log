@@ -1,0 +1,1611 @@
+2025-03-16T16:47:36.632-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 35199 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T16:47:36.632-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T16:47:36.632-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T16:47:36.689-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T16:47:36.690-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-16T16:47:36.709-04:00  WARN 35199 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T16:47:36.710-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T16:47:36.730-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T16:47:36.730-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T16:47:36.731-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T16:47:36.735-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T16:47:36.735-04:00  INFO 35199 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 102 ms
+2025-03-16T16:47:36.750-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-03-16T16:47:36.752-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:fe04bc1c-322e-4c26-bfa4-1cc975cb0a61 user=SA
+2025-03-16T16:47:36.752-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-03-16T16:47:36.754-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T16:47:36.755-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T16:47:36.759-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T16:47:36.760-04:00  INFO 35199 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T16:47:36.768-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T16:47:36.768-04:00  INFO 35199 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T16:47:36.784-04:00  WARN 35199 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T16:47:36.794-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T16:47:36.802-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T16:47:36.807-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T16:47:36.812-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T16:47:36.822-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fe04bc1c-322e-4c26-bfa4-1cc975cb0a61'
+2025-03-16T16:47:36.833-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T16:47:36.837-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T16:47:36.840-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 0.237 seconds (process running for 1703.1)
+2025-03-16T16:47:36.840-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-16T16:48:16.863-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16T16:48:16.864-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-16T16:48:16.865-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-16T16:48:16.865-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-16T16:48:16.865-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-16T16:48:16.872-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@55451148
+2025-03-16T16:48:16.873-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5295b294
+2025-03-16T16:48:16.877-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-16T16:48:16.877-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2025-03-16T16:48:16.885-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T16:48:16.886-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T16:48:16.912-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T16:48:16.914-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T16:48:16.949-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ClassCastException: class java.lang.Double cannot be cast to class java.lang.Integer (java.lang.Double and java.lang.Integer are in module java.base of loader 'bootstrap')
+2025-03-16T16:48:16.950-04:00 ERROR 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ClassCastException: class java.lang.Double cannot be cast to class java.lang.Integer (java.lang.Double and java.lang.Integer are in module java.base of loader 'bootstrap')] with root cause
+
+java.lang.ClassCastException: class java.lang.Double cannot be cast to class java.lang.Integer (java.lang.Double and java.lang.Integer are in module java.base of loader 'bootstrap')
+	at com.example.webhook.controller.WebhookController.receiveWebhook(WebhookController.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-03-16T16:48:16.955-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2025-03-16T16:48:16.956-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-03-16T16:48:16.957-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-16T16:48:16.958-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 16 16:48:16 EDT 2025, status=500, error=Internal Server Error, trace=java.lang.Cl (truncated)...]
+2025-03-16T16:48:16.960-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2025-03-16T16:53:21.559-04:00  INFO 35199 --- [webhook-automation] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-16T16:53:21.568-04:00  INFO 35199 --- [webhook-automation] [Thread-24] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T16:53:21.574-04:00  INFO 35199 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T16:53:21.576-04:00  INFO 35199 --- [webhook-automation] [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T16:53:21.580-04:00  WARN 35199 --- [webhook-automation] [Thread-24] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T16:53:21.580-04:00  INFO 35199 --- [webhook-automation] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-03-16T16:53:21.582-04:00  INFO 35199 --- [webhook-automation] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-03-16T16:53:21.657-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 35199 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T16:53:21.657-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T16:53:21.657-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T16:53:21.745-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T16:53:21.746-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-16T16:53:21.776-04:00  WARN 35199 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T16:53:21.777-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T16:53:21.860-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T16:53:21.861-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T16:53:21.861-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T16:53:21.870-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T16:53:21.870-04:00  INFO 35199 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 212 ms
+2025-03-16T16:53:21.886-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-03-16T16:53:21.887-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:c7574397-4ae6-4afe-a203-db4909297dc0 user=SA
+2025-03-16T16:53:21.887-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-03-16T16:53:21.889-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T16:53:21.891-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T16:53:21.896-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T16:53:21.897-04:00  INFO 35199 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T16:53:21.906-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T16:53:21.906-04:00  INFO 35199 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T16:53:21.926-04:00  WARN 35199 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T16:53:21.938-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T16:53:21.947-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T16:53:21.952-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T16:53:21.956-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T16:53:21.968-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c7574397-4ae6-4afe-a203-db4909297dc0'
+2025-03-16T16:53:21.981-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T16:53:21.985-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T16:53:21.988-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 0.348 seconds (process running for 2048.247)
+2025-03-16T16:53:21.988-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-16T16:54:22.965-04:00  INFO 35199 --- [webhook-automation] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-16T16:54:22.971-04:00  INFO 35199 --- [webhook-automation] [Thread-28] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T16:54:22.974-04:00  INFO 35199 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T16:54:22.975-04:00  INFO 35199 --- [webhook-automation] [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T16:54:22.978-04:00  WARN 35199 --- [webhook-automation] [Thread-28] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T16:54:22.978-04:00  INFO 35199 --- [webhook-automation] [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-03-16T16:54:22.978-04:00  INFO 35199 --- [webhook-automation] [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-03-16T16:54:23.037-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 35199 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T16:54:23.037-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T16:54:23.037-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T16:54:23.124-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T16:54:23.125-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-16T16:54:23.147-04:00  WARN 35199 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T16:54:23.148-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T16:54:23.169-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T16:54:23.169-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T16:54:23.169-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T16:54:23.179-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T16:54:23.179-04:00  INFO 35199 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2025-03-16T16:54:23.195-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-03-16T16:54:23.196-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:68693350-399d-4d11-a285-9723567d0e6d user=SA
+2025-03-16T16:54:23.197-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-03-16T16:54:23.198-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T16:54:23.199-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T16:54:23.204-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T16:54:23.205-04:00  INFO 35199 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T16:54:23.213-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T16:54:23.213-04:00  INFO 35199 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T16:54:23.230-04:00  WARN 35199 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T16:54:23.241-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T16:54:23.249-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T16:54:23.254-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T16:54:23.259-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T16:54:23.268-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:68693350-399d-4d11-a285-9723567d0e6d'
+2025-03-16T16:54:23.279-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T16:54:23.282-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T16:54:23.285-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 0.261 seconds (process running for 2109.544)
+2025-03-16T16:54:23.285-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-16T17:05:22.722-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16T17:05:22.724-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-16T17:05:22.724-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-16T17:05:22.724-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-16T17:05:22.724-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-16T17:05:22.731-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4f812edd
+2025-03-16T17:05:22.731-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@111969d3
+2025-03-16T17:05:22.731-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-16T17:05:22.731-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-03-16T17:05:22.732-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T17:05:22.734-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T17:05:22.768-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T17:05:22.773-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T17:05:22.781-04:00 ERROR 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : ❌ Error processing webhook payload: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+
+java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+	at com.example.webhook.controller.WebhookController.receiveWebhook(WebhookController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-03-16T17:05:22.844-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T17:05:22.845-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Invalid payload format."]
+2025-03-16T17:05:22.850-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-03-16T17:05:31.033-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T17:05:31.035-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T17:05:31.037-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T17:05:31.037-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T17:05:31.037-04:00 ERROR 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : ❌ Error processing webhook payload: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+
+java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+	at com.example.webhook.controller.WebhookController.receiveWebhook(WebhookController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-03-16T17:05:31.041-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T17:05:31.041-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Invalid payload format."]
+2025-03-16T17:05:31.041-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-03-16T17:07:09.904-04:00  INFO 35199 --- [webhook-automation] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-16T17:07:09.909-04:00  INFO 35199 --- [webhook-automation] [Thread-32] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T17:07:09.914-04:00  INFO 35199 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T17:07:09.918-04:00  INFO 35199 --- [webhook-automation] [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T17:07:09.921-04:00  WARN 35199 --- [webhook-automation] [Thread-32] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T17:07:09.922-04:00  INFO 35199 --- [webhook-automation] [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2025-03-16T17:07:09.922-04:00  INFO 35199 --- [webhook-automation] [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2025-03-16T17:07:09.985-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 35199 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T17:07:09.985-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T17:07:09.985-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T17:07:10.060-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T17:07:10.061-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-16T17:07:10.089-04:00  WARN 35199 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T17:07:10.090-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T17:07:10.120-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T17:07:10.120-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T17:07:10.120-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T17:07:10.130-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T17:07:10.130-04:00  INFO 35199 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2025-03-16T17:07:10.146-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2025-03-16T17:07:10.148-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:mem:e844e8c5-e3b6-43d5-a3f7-cc9d07239d00 user=SA
+2025-03-16T17:07:10.148-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2025-03-16T17:07:10.150-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T17:07:10.152-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T17:07:10.156-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T17:07:10.158-04:00  INFO 35199 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T17:07:10.166-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T17:07:10.166-04:00  INFO 35199 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T17:07:10.187-04:00  WARN 35199 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T17:07:10.199-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T17:07:10.207-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T17:07:10.212-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T17:07:10.217-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T17:07:10.229-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e844e8c5-e3b6-43d5-a3f7-cc9d07239d00'
+2025-03-16T17:07:10.241-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T17:07:10.245-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T17:07:10.248-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 0.275 seconds (process running for 2876.506)
+2025-03-16T17:07:10.249-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-16T17:07:23.693-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16T17:07:23.694-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-16T17:07:23.694-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-16T17:07:23.694-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-16T17:07:23.694-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-16T17:07:23.697-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@517161e7
+2025-03-16T17:07:23.697-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7269a2bb
+2025-03-16T17:07:23.697-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-16T17:07:23.697-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-16T17:07:23.699-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T17:07:23.700-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T17:07:23.712-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T17:07:23.713-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12923, Active Energy=486.0200000000003, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T17:07:23.713-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : Invalid number format for value: 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2025-03-16T17:07:23.713-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 12923
+2025-03-16T17:07:23.714-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 486
+2025-03-16T17:07:23.714-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T17:07:23.714-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T17:07:23.714-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T17:07:23.715-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T17:10:53.482-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T17:10:53.485-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T17:10:53.492-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=4649, Active Energy=219.921, Exercise Minutes=1<EOL>1<EOL>1}]
+2025-03-16T17:10:53.493-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=4649, Active Energy=219.921, Exercise Minutes=1
+1
+1}
+2025-03-16T17:10:53.493-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 4649
+2025-03-16T17:10:53.493-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 219
+2025-03-16T17:10:53.493-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 111
+2025-03-16T17:10:53.495-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T17:10:53.495-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T17:10:53.498-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T17:13:05.131-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T17:13:05.135-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T17:13:05.148-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=11640, Active Energy=1426.581, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1 (truncated)...]
+2025-03-16T17:13:05.149-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=11640, Active Energy=1426.581, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T17:13:05.149-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : Invalid number format for value: 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2025-03-16T17:13:05.149-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 11640
+2025-03-16T17:13:05.149-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 1426
+2025-03-16T17:13:05.149-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T17:13:05.153-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T17:13:05.153-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T17:13:05.155-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T17:15:07.384-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T17:15:07.392-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T17:15:07.398-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=4649, Active Energy=219.921, Exercise Minutes=1<EOL>1<EOL>1}]
+2025-03-16T17:15:07.399-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=4649, Active Energy=219.921, Exercise Minutes=1
+1
+1}
+2025-03-16T17:15:07.400-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 4649
+2025-03-16T17:15:07.400-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 219
+2025-03-16T17:15:07.400-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 111
+2025-03-16T17:15:07.401-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T17:15:07.401-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T17:15:07.406-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T17:18:16.477-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T17:18:16.483-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T17:18:16.497-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=4649, Active Energy=219.921, Exercise Minutes=1<EOL>1<EOL>1}]
+2025-03-16T17:18:16.500-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=4649, Active Energy=219.921, Exercise Minutes=1
+1
+1}
+2025-03-16T17:18:16.501-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 📌 Steps: 4649
+2025-03-16T17:18:16.501-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔥 Active Energy: 219
+2025-03-16T17:18:16.501-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 111
+2025-03-16T17:18:16.507-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T17:18:16.508-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T17:18:16.524-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T17:30:25.170-04:00  WARN 35199 --- [webhook-automation] [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=8m14s779ms).
+2025-03-16T17:31:23.157-04:00  WARN 35199 --- [webhook-automation] [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=57s987ms).
+2025-03-16T17:40:45.370-04:00  WARN 35199 --- [webhook-automation] [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=9m22s213ms).
+2025-03-16T18:05:23.603-04:00  WARN 35199 --- [webhook-automation] [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=24m38s234ms).
+2025-03-16T18:06:04.403-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:06:04.409-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:06:04.428-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12743, Active Energy=405.9379999999992, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T18:06:04.439-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12743, Active Energy=405.9379999999992, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T18:06:04.444-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : Invalid number format for value: 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2025-03-16T18:06:04.444-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 📌 Steps: 12743
+2025-03-16T18:06:04.444-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 🔥 Active Energy: 405
+2025-03-16T18:06:04.444-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T18:06:04.452-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:06:04.454-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:06:04.474-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:06:30.212-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:06:30.215-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:06:30.239-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12743, Active Energy=405.9379999999992, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T18:06:30.239-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12743, Active Energy=405.9379999999992, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T18:06:30.240-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : Invalid number format for value: 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2025-03-16T18:06:30.240-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 12743
+2025-03-16T18:06:30.240-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 405
+2025-03-16T18:06:30.240-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T18:06:30.240-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:06:30.240-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:06:30.241-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:12:03.234-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:12:03.240-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:12:03.264-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12944, Active Energy=405.9379999999992, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T18:12:03.265-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12944, Active Energy=405.9379999999992, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T18:12:03.265-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : Invalid number format for value: 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2025-03-16T18:12:03.265-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 12944
+2025-03-16T18:12:03.265-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 405
+2025-03-16T18:12:03.266-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T18:12:03.266-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:12:03.266-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:12:03.272-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:33:20.682-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:33:20.685-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:33:20.689-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12995, Active Energy=408.9619999999993, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T18:33:20.690-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12995, Active Energy=408.9619999999993, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T18:33:20.691-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : Invalid number format for value: 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2025-03-16T18:33:20.691-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 📌 Steps: 12995
+2025-03-16T18:33:20.691-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 🔥 Active Energy: 408
+2025-03-16T18:33:20.691-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T18:33:20.691-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:33:20.692-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:33:20.693-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:37:29.127-04:00  INFO 35199 --- [webhook-automation] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-16T18:37:29.138-04:00  INFO 35199 --- [webhook-automation] [Thread-36] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T18:37:29.144-04:00  INFO 35199 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T18:37:29.151-04:00  INFO 35199 --- [webhook-automation] [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T18:37:29.159-04:00  WARN 35199 --- [webhook-automation] [Thread-36] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T18:37:29.160-04:00  INFO 35199 --- [webhook-automation] [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2025-03-16T18:37:29.163-04:00  INFO 35199 --- [webhook-automation] [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2025-03-16T18:37:29.300-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 35199 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T18:37:29.301-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T18:37:29.301-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T18:37:29.391-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T18:37:29.393-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-16T18:37:29.425-04:00  WARN 35199 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T18:37:29.428-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T18:37:29.466-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T18:37:29.467-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T18:37:29.467-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T18:37:29.479-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T18:37:29.479-04:00  INFO 35199 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 177 ms
+2025-03-16T18:37:29.496-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2025-03-16T18:37:29.497-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn100: url=jdbc:h2:mem:f2fd3dda-c7a6-49f6-aefd-c9bdb4d9a6d6 user=SA
+2025-03-16T18:37:29.497-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2025-03-16T18:37:29.499-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T18:37:29.501-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T18:37:29.506-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T18:37:29.506-04:00  INFO 35199 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T18:37:29.515-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T18:37:29.515-04:00  INFO 35199 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T18:37:29.537-04:00  WARN 35199 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T18:37:29.549-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T18:37:29.558-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T18:37:29.563-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T18:37:29.568-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T18:37:29.581-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f2fd3dda-c7a6-49f6-aefd-c9bdb4d9a6d6'
+2025-03-16T18:37:29.593-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T18:37:29.597-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T18:37:29.599-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 0.317 seconds (process running for 5817.156)
+2025-03-16T18:37:29.600-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-16T18:37:45.505-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16T18:37:45.507-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-16T18:37:45.507-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-16T18:37:45.508-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-16T18:37:45.508-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-16T18:37:45.516-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a164d52
+2025-03-16T18:37:45.516-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@594df655
+2025-03-16T18:37:45.517-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-16T18:37:45.517-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2025-03-16T18:37:45.519-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:37:45.522-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:37:45.564-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL>1<EOL> (truncated)...]
+2025-03-16T18:37:45.565-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1}
+2025-03-16T18:37:45.565-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 12995
+2025-03-16T18:37:45.565-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 413
+2025-03-16T18:37:45.565-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 35
+2025-03-16T18:37:45.566-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:37:45.566-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:37:45.567-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:39:16.606-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:39:16.608-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:39:16.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=35}]
+2025-03-16T18:39:16.613-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=35}
+2025-03-16T18:39:16.613-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 12995
+2025-03-16T18:39:16.613-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 413
+2025-03-16T18:39:16.613-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 35
+2025-03-16T18:39:16.614-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:39:16.614-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:39:16.615-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:40:06.596-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:40:06.600-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:40:06.609-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=35}]
+2025-03-16T18:40:06.610-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=35}
+2025-03-16T18:40:06.610-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 12995
+2025-03-16T18:40:06.610-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 413
+2025-03-16T18:40:06.610-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 35
+2025-03-16T18:40:06.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:40:06.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:40:06.613-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:40:51.540-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:40:51.544-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:40:51.570-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=35}]
+2025-03-16T18:40:51.570-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Steps=12995, Active Energy=413.3899999999993, Exercise Minutes=35}
+2025-03-16T18:40:51.571-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 📌 Steps: 12995
+2025-03-16T18:40:51.571-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 🔥 Active Energy: 413
+2025-03-16T18:40:51.571-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 35
+2025-03-16T18:40:51.571-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:40:51.571-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:40:51.572-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:52:57.703-04:00  INFO 35199 --- [webhook-automation] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-16T18:52:57.720-04:00  INFO 35199 --- [webhook-automation] [Thread-40] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T18:52:57.725-04:00  INFO 35199 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T18:52:57.729-04:00  INFO 35199 --- [webhook-automation] [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T18:52:57.733-04:00  WARN 35199 --- [webhook-automation] [Thread-40] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T18:52:57.733-04:00  INFO 35199 --- [webhook-automation] [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2025-03-16T18:52:57.735-04:00  INFO 35199 --- [webhook-automation] [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2025-03-16T18:52:57.813-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 35199 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T18:52:57.813-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T18:52:57.813-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T18:52:57.895-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T18:52:57.895-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-16T18:52:57.921-04:00  WARN 35199 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T18:52:57.922-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T18:52:57.954-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T18:52:57.955-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T18:52:57.955-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T18:52:57.960-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T18:52:57.960-04:00  INFO 35199 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2025-03-16T18:52:57.976-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2025-03-16T18:52:57.976-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn110: url=jdbc:h2:mem:256eef4c-6760-47e3-b097-37a334043c49 user=SA
+2025-03-16T18:52:57.977-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2025-03-16T18:52:57.979-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T18:52:57.981-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T18:52:57.985-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T18:52:57.986-04:00  INFO 35199 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T18:52:57.994-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T18:52:57.994-04:00  INFO 35199 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T18:52:58.016-04:00  WARN 35199 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T18:52:58.027-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T18:52:58.035-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T18:52:58.040-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T18:52:58.044-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T18:52:58.058-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:256eef4c-6760-47e3-b097-37a334043c49'
+2025-03-16T18:52:58.070-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T18:52:58.075-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T18:52:58.078-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 0.284 seconds (process running for 6745.638)
+2025-03-16T18:52:58.078-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-16T18:53:18.152-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16T18:53:18.154-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-16T18:53:18.154-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-16T18:53:18.154-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-16T18:53:18.154-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-16T18:53:18.159-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3b653d6b
+2025-03-16T18:53:18.159-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@185ed482
+2025-03-16T18:53:18.160-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-16T18:53:18.160-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-03-16T18:53:18.162-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:53:18.169-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:53:18.189-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=415.3549999999993, Exercise Minutes=35, Name=Darshan, Steps=12995}]
+2025-03-16T18:53:18.190-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=415.3549999999993, Exercise Minutes=35, Name=Darshan, Steps=12995}
+2025-03-16T18:53:18.200-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T18:53:18.200-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 12995
+2025-03-16T18:53:18.200-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 415
+2025-03-16T18:53:18.200-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 35
+2025-03-16T18:53:18.205-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:53:18.206-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:53:18.209-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T18:59:52.070-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T18:59:52.073-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T18:59:52.080-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=0, Exercise Minutes=, Name=Spandana, Steps=437}]
+2025-03-16T18:59:52.081-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=0, Exercise Minutes=, Name=Spandana, Steps=437}
+2025-03-16T18:59:52.081-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : Invalid number format for Exercise Minutes: 
+2025-03-16T18:59:52.081-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Spandana
+2025-03-16T18:59:52.081-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 437
+2025-03-16T18:59:52.081-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 0
+2025-03-16T18:59:52.081-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T18:59:52.084-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T18:59:52.084-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T18:59:52.085-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T19:00:02.609-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T19:00:02.611-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T19:00:02.611-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=0, Exercise Minutes=, Name=Spandana, Steps=437}]
+2025-03-16T19:00:02.611-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=0, Exercise Minutes=, Name=Spandana, Steps=437}
+2025-03-16T19:00:02.611-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : Invalid number format for Exercise Minutes: 
+2025-03-16T19:00:02.612-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 👤 User: Spandana
+2025-03-16T19:00:02.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 📌 Steps: 437
+2025-03-16T19:00:02.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 🔥 Active Energy: 0
+2025-03-16T19:00:02.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T19:00:02.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T19:00:02.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T19:00:02.612-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T19:00:04.675-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T19:00:04.676-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T19:00:04.678-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=0, Exercise Minutes=, Name=Spandana, Steps=437}]
+2025-03-16T19:00:04.678-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=0, Exercise Minutes=, Name=Spandana, Steps=437}
+2025-03-16T19:00:04.679-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : Invalid number format for Exercise Minutes: 
+2025-03-16T19:00:04.679-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 👤 User: Spandana
+2025-03-16T19:00:04.679-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 📌 Steps: 437
+2025-03-16T19:00:04.679-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 🔥 Active Energy: 0
+2025-03-16T19:00:04.679-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T19:00:04.679-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T19:00:04.679-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T19:00:04.680-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T19:03:07.240-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T19:03:07.245-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T19:03:07.253-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=0, Exercise Minutes=, Name=Seema, Steps=430}]
+2025-03-16T19:03:07.254-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=0, Exercise Minutes=, Name=Seema, Steps=430}
+2025-03-16T19:03:07.255-04:00  WARN 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : Invalid number format for Exercise Minutes: 
+2025-03-16T19:03:07.255-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 👤 User: Seema
+2025-03-16T19:03:07.255-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 📌 Steps: 430
+2025-03-16T19:03:07.255-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 🔥 Active Energy: 0
+2025-03-16T19:03:07.255-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 0
+2025-03-16T19:03:07.256-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T19:03:07.256-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T19:03:07.258-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T19:04:17.716-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T19:04:17.720-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T19:04:17.729-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=417.8369999999993, Exercise Minutes=35, Name=Darshan, Steps=13019}]
+2025-03-16T19:04:17.730-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=417.8369999999993, Exercise Minutes=35, Name=Darshan, Steps=13019}
+2025-03-16T19:04:17.730-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T19:04:17.730-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 📌 Steps: 13019
+2025-03-16T19:04:17.730-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 🔥 Active Energy: 417
+2025-03-16T19:04:17.730-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 35
+2025-03-16T19:04:17.731-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T19:04:17.732-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T19:04:17.733-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T19:05:47.126-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/webhook", parameters={}
+2025-03-16T19:05:47.128-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.webhook.controller.WebhookController#receiveWebhook(Map)
+2025-03-16T19:05:47.136-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{Active Energy=417.8369999999993, Exercise Minutes=35, Name=Darshan, Steps=13019}]
+2025-03-16T19:05:47.136-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔹 Received Webhook Data: {Active Energy=417.8369999999993, Exercise Minutes=35, Name=Darshan, Steps=13019}
+2025-03-16T19:05:47.137-04:00  INFO 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 👤 User: Darshan
+2025-03-16T19:05:47.137-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 📌 Steps: 13019
+2025-03-16T19:05:47.137-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 🔥 Active Energy: 417
+2025-03-16T19:05:47.137-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] c.e.w.controller.WebhookController       : 💪 Exercise Minutes: 35
+2025-03-16T19:05:47.138-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-16T19:05:47.138-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["✅ Webhook received successfully!"]
+2025-03-16T19:05:47.142-04:00 DEBUG 35199 --- [webhook-automation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-16T19:24:16.231-04:00  WARN 35199 --- [webhook-automation] [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=8m46s672ms).
+2025-03-16T19:28:00.046-04:00  WARN 35199 --- [webhook-automation] [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=3m13s792ms).
+2025-03-16T19:36:54.411-04:00  WARN 35199 --- [webhook-automation] [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=8m54s366ms).
+2025-03-16T19:38:44.303-04:00  WARN 35199 --- [webhook-automation] [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=1m19s874ms).
+2025-03-16T20:08:33.681-04:00  INFO 35199 --- [webhook-automation] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-16T20:08:33.704-04:00  INFO 35199 --- [webhook-automation] [Thread-44] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T20:08:33.714-04:00  INFO 35199 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T20:08:33.721-04:00  INFO 35199 --- [webhook-automation] [Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:08:33.733-04:00  WARN 35199 --- [webhook-automation] [Thread-44] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T20:08:33.734-04:00  INFO 35199 --- [webhook-automation] [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2025-03-16T20:08:33.736-04:00  INFO 35199 --- [webhook-automation] [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2025-03-16T20:08:33.890-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication using Java 17.0.4.1 with PID 35199 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/classes started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T20:08:33.890-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T20:08:33.890-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T20:08:33.997-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T20:08:33.998-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-03-16T20:08:34.031-04:00  WARN 35199 --- [webhook-automation] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T20:08:34.032-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T20:08:34.073-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T20:08:34.074-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T20:08:34.074-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T20:08:34.084-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T20:08:34.084-04:00  INFO 35199 --- [webhook-automation] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2025-03-16T20:08:34.111-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2025-03-16T20:08:34.113-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection conn130: url=jdbc:h2:mem:b42be29e-9fca-4138-a883-f7479f9806ea user=SA
+2025-03-16T20:08:34.113-04:00  INFO 35199 --- [webhook-automation] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2025-03-16T20:08:34.115-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T20:08:34.117-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T20:08:34.127-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T20:08:34.128-04:00  INFO 35199 --- [webhook-automation] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T20:08:34.136-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T20:08:34.136-04:00  INFO 35199 --- [webhook-automation] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:08:34.151-04:00  WARN 35199 --- [webhook-automation] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T20:08:34.161-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T20:08:34.169-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T20:08:34.174-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T20:08:34.179-04:00 DEBUG 35199 --- [webhook-automation] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T20:08:34.190-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b42be29e-9fca-4138-a883-f7479f9806ea'
+2025-03-16T20:08:34.200-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-16T20:08:34.204-04:00  INFO 35199 --- [webhook-automation] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T20:08:34.207-04:00  INFO 35199 --- [webhook-automation] [restartedMain] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 0.344 seconds (process running for 10065.925)
+2025-03-16T20:08:34.208-04:00  INFO 35199 --- [webhook-automation] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-16T20:10:10.569-04:00  INFO 35199 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T20:10:10.576-04:00  INFO 35199 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T20:10:10.579-04:00  INFO 35199 --- [webhook-automation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:10:10.581-04:00  WARN 35199 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-16T20:10:10.581-04:00  INFO 35199 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2025-03-16T20:10:10.582-04:00  INFO 35199 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2025-03-16T20:10:36.577-04:00  INFO 83160 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : Starting WebhookAutomationApplicationTests using Java 17.0.4.1 with PID 83160 (started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T20:10:36.577-04:00 DEBUG 83160 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T20:10:36.578-04:00  INFO 83160 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T20:10:36.592-04:00 DEBUG 83160 --- [webhook-automation] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5aa360ea
+2025-03-16T20:10:36.896-04:00  INFO 83160 --- [webhook-automation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T20:10:36.908-04:00  INFO 83160 --- [webhook-automation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-03-16T20:10:37.039-04:00  WARN 83160 --- [webhook-automation] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T20:10:37.067-04:00  INFO 83160 --- [webhook-automation] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T20:10:37.129-04:00  INFO 83160 --- [webhook-automation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-16T20:10:37.223-04:00  INFO 83160 --- [webhook-automation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8ef7fed6-9088-44e5-a508-1089ac9bf259 user=SA
+2025-03-16T20:10:37.224-04:00  INFO 83160 --- [webhook-automation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-16T20:10:37.251-04:00  INFO 83160 --- [webhook-automation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T20:10:37.280-04:00  INFO 83160 --- [webhook-automation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-16T20:10:37.298-04:00  INFO 83160 --- [webhook-automation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T20:10:37.424-04:00  INFO 83160 --- [webhook-automation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T20:10:37.462-04:00  INFO 83160 --- [webhook-automation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T20:10:37.633-04:00  INFO 83160 --- [webhook-automation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T20:10:37.635-04:00  INFO 83160 --- [webhook-automation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:10:37.728-04:00  WARN 83160 --- [webhook-automation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T20:10:37.768-04:00 DEBUG 83160 --- [webhook-automation] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T20:10:37.800-04:00 DEBUG 83160 --- [webhook-automation] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T20:10:37.817-04:00 DEBUG 83160 --- [webhook-automation] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T20:10:37.845-04:00 DEBUG 83160 --- [webhook-automation] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T20:10:37.904-04:00  INFO 83160 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplicationTests  : Started WebhookAutomationApplicationTests in 1.487 seconds (process running for 1.956)
+2025-03-16T20:10:38.237-04:00 DEBUG 83160 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5aa360ea, started on Sun Mar 16 20:10:36 EDT 2025
+2025-03-16T20:10:38.239-04:00  INFO 83160 --- [webhook-automation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:10:38.239-04:00  INFO 83160 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-16T20:10:38.240-04:00  INFO 83160 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-16T20:10:54.285-04:00  INFO 83253 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplication       : Starting WebhookAutomationApplication v0.0.1-SNAPSHOT using Java 17.0.4.1 with PID 83253 (/Users/darshan/Documents/JAVA/spring/webhook-automation/target/webhook-automation-0.0.1-SNAPSHOT.jar started by darshan in /Users/darshan/Documents/JAVA/spring/webhook-automation)
+2025-03-16T20:10:54.286-04:00 DEBUG 83253 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplication       : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-16T20:10:54.287-04:00  INFO 83253 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-16T20:10:54.753-04:00  INFO 83253 --- [webhook-automation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16T20:10:54.764-04:00  INFO 83253 --- [webhook-automation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2025-03-16T20:10:54.908-04:00  WARN 83253 --- [webhook-automation] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-16T20:10:54.927-04:00  INFO 83253 --- [webhook-automation] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-03-16T20:10:55.076-04:00  INFO 83253 --- [webhook-automation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-16T20:10:55.084-04:00  INFO 83253 --- [webhook-automation] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-16T20:10:55.084-04:00  INFO 83253 --- [webhook-automation] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-16T20:10:55.101-04:00  INFO 83253 --- [webhook-automation] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-16T20:10:55.101-04:00  INFO 83253 --- [webhook-automation] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2025-03-16T20:10:55.173-04:00  INFO 83253 --- [webhook-automation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-16T20:10:55.312-04:00  INFO 83253 --- [webhook-automation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:987c8462-bfa9-442d-8b02-b6480991f08c user=SA
+2025-03-16T20:10:55.313-04:00  INFO 83253 --- [webhook-automation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-16T20:10:55.347-04:00  INFO 83253 --- [webhook-automation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16T20:10:55.382-04:00  INFO 83253 --- [webhook-automation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-16T20:10:55.401-04:00  INFO 83253 --- [webhook-automation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-16T20:10:55.539-04:00  INFO 83253 --- [webhook-automation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16T20:10:55.582-04:00  INFO 83253 --- [webhook-automation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-16T20:10:55.795-04:00  INFO 83253 --- [webhook-automation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16T20:10:55.798-04:00  INFO 83253 --- [webhook-automation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:10:55.852-04:00  WARN 83253 --- [webhook-automation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16T20:10:55.911-04:00 DEBUG 83253 --- [webhook-automation] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-03-16T20:10:55.939-04:00 DEBUG 83253 --- [webhook-automation] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-16T20:10:55.970-04:00 DEBUG 83253 --- [webhook-automation] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-16T20:10:56.013-04:00 DEBUG 83253 --- [webhook-automation] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-16T20:10:56.113-04:00  INFO 83253 --- [webhook-automation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-16T20:10:56.128-04:00  INFO 83253 --- [webhook-automation] [main] c.e.t.WebhookAutomationApplication       : Started WebhookAutomationApplication in 2.128 seconds (process running for 2.483)
+2025-03-16T20:11:59.536-04:00  INFO 83253 --- [webhook-automation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-16T20:11:59.556-04:00  INFO 83253 --- [webhook-automation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-16T20:11:59.562-04:00  INFO 83253 --- [webhook-automation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16T20:11:59.565-04:00  INFO 83253 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-16T20:11:59.568-04:00  INFO 83253 --- [webhook-automation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
